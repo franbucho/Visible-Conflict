@@ -1,3 +1,4 @@
+/* Reset general */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -40,13 +41,13 @@ body {
 /* Banner del título */
 #banner {
   background-color: #222;
-  padding: 10px 20px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
-  color: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 15px;
+  height: 48px;
+  min-height: 48px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
   font-size: 1em;
 }
 
@@ -54,17 +55,19 @@ body {
 #title {
   margin: 0;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1em;
+  white-space: nowrap;
 }
 
-/* Botones de idioma dentro del banner */
+/* Botones de idioma */
 #language-toggle {
   display: flex;
   gap: 8px;
 }
 
 #language-toggle button {
-  padding: 6px 10px;
+  padding: 4px 8px;
+  font-size: 0.9em;
   background-color: #444;
   color: white;
   border: none;
