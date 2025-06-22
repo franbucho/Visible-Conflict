@@ -1,35 +1,69 @@
 let language = 'es';
+let map;
+let markersLayer;
 
 const translations = {
   es: {
-    title: "Mapa de Conflicto en Irán",
+    title: "Mapa de Conflictos Mundiales",
     tipo: "Tipo",
     fecha: "Fecha",
     descripcion: "Descripción"
   },
   en: {
-    title: "Iran Conflict Map",
+    title: "World Conflict Map",
     tipo: "Type",
     fecha: "Date",
     descripcion: "Description"
   }
 };
 
+const newsItems = {
+  es: [
+    "Bombardeo con B-2 Spirit en Natanz y Fordow reportado el 21 de junio.",
+    "Aviones KC-46 Pegasus apoyaron la misión con reabastecimiento aéreo.",
+    "Dron no identificado sobrevoló Shiraz antes de los ataques.",
+    "Sigue la tensión en Medio Oriente con múltiples incidentes militares."
+  ],
+  en: [
+    "B-2 Spirit bombing on Natanz and Fordow reported on June 21.",
+    "KC-46 Pegasus planes supported the mission with aerial refueling.",
+    "Unidentified drone spotted over Shiraz before the attacks.",
+    "Tensions escalate in the Middle East with multiple military incidents."
+  ]
+};
+
+function updateNewsTicker() {
+  const ticker = document.getElementById('news-ticker');
+  if (!ticker) return;
+  const text = newsItems[language].join("     ***     ");
+  ticker.textContent = text + "     ***     " + text;
+}
+
 function setLanguage(lang) {
   language = lang;
   document.getElementById('title').innerText = translations[lang].title;
-  loadMap(); // Recargar con idioma actualizado
+  loadMapData();
+  updateNewsTicker();
 }
 
-function loadMap() {
-  document.getElementById('map').innerHTML = "";
+function initMap() {
+  if (map) {
+    map.remove();
+  }
 
-  const map = L.map('map').setView([32.4279, 53.6880], 6);
+  map = L.map('map').setView([32.4279, 53.6880], 6);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
+
+  markersLayer = L.layerGroup().addTo(map);
+}
+
+function loadMapData() {
+  if (!map) initMap();
+  markersLayer.clearLayers();
 
   fetch('data.json')
     .then(res => res.json())
@@ -45,13 +79,17 @@ function loadMap() {
         const tooltip = `${event.nombre}: ${event.tipo}`;
 
         L.marker([event.lat, event.lng])
-          .addTo(map)
+          .addTo(markersLayer)
           .bindPopup(popup)
           .bindTooltip(tooltip, { permanent: false, direction: "top" });
       });
+    })
+    .catch(err => {
+      console.error("Error cargando data.json:", err);
     });
 }
 
 window.onload = () => {
+  initMap();
   setLanguage('es');
 };
