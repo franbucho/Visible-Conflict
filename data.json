@@ -5,7 +5,7 @@
     "nombre": "Natanz",
     "fecha": "2025-06-21",
     "tipo": "Instalación nuclear",
-    "descripcion": "Instalación de enriquecimiento de uranio en Natanz. Objetivo frecuente de sabotajes y ataques."
+    "descripcion": "Bombardeada con bombarderos B-2 Spirit, con apoyo de 2 aviones KC-46 Pegasus que los repostaron para la vuelta inmediata a Estados Unidos."
   },
   {
     "lat": 34.8856,
@@ -13,7 +13,7 @@
     "nombre": "Fordow",
     "fecha": "2025-06-21",
     "tipo": "Instalación nuclear",
-    "descripcion": "Complejo de Fordow, altamente fortificado, construido dentro de una montaña."
+    "descripcion": "Bombardeada con bombarderos B-2 Spirit, con apoyo de 2 aviones KC-46 Pegasus que los repostaron para la vuelta inmediata a Estados Unidos."
   },
   {
     "lat": 32.5388,
@@ -21,6 +21,6 @@
     "nombre": "Isfahan",
     "fecha": "2025-06-21",
     "tipo": "Instalación nuclear",
-    "descripcion": "Instalación de conversión de uranio en Isfahan. Procesa materia prima para enriquecimiento."
+    "descripcion": "Bombardeada con bombarderos B-2 Spirit, con apoyo de 2 aviones KC-46 Pegasus que los repostaron para la vuelta inmediata a Estados Unidos."
   }
 ]
