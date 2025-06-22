@@ -18,15 +18,17 @@ const translations = {
 function setLanguage(lang) {
   language = lang;
   document.getElementById('title').innerText = translations[lang].title;
-  loadMap(); // recargar con popups traducidos
+  loadMap(); // Recargar con idioma actualizado
 }
 
 function loadMap() {
   document.getElementById('map').innerHTML = "";
+
   const map = L.map('map').setView([32.4279, 53.6880], 6);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
+    attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
   fetch('data.json')
@@ -34,11 +36,18 @@ function loadMap() {
     .then(data => {
       data.forEach(event => {
         const popup = `
+          <strong>${event.nombre}</strong><br>
           <strong>${translations[language].tipo}:</strong> ${event.tipo}<br>
           <strong>${translations[language].fecha}:</strong> ${event.fecha}<br>
           <strong>${translations[language].descripcion}:</strong> ${event.descripcion}
         `;
-        L.marker([event.lat, event.lng]).addTo(map).bindPopup(popup);
+
+        const tooltip = `${event.nombre}: ${event.tipo}`;
+
+        L.marker([event.lat, event.lng])
+          .addTo(map)
+          .bindPopup(popup)
+          .bindTooltip(tooltip, { permanent: false, direction: "top" });
       });
     });
 }
