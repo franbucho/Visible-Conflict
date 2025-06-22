@@ -1,0 +1,26 @@
+[
+  {
+    "lat": 32.3779,
+    "lng": 50.8553,
+    "nombre": "Natanz",
+    "fecha": "2025-06-21",
+    "tipo": "Instalación nuclear",
+    "descripcion": "Instalación de enriquecimiento de uranio en Natanz. Objetivo frecuente de sabotajes y ataques."
+  },
+  {
+    "lat": 34.8856,
+    "lng": 50.9945,
+    "nombre": "Fordow",
+    "fecha": "2025-06-21",
+    "tipo": "Instalación nuclear",
+    "descripcion": "Complejo de Fordow, altamente fortificado, construido dentro de una montaña."
+  },
+  {
+    "lat": 32.5388,
+    "lng": 51.8824,
+    "nombre": "Isfahan",
+    "fecha": "2025-06-21",
+    "tipo": "Instalación nuclear",
+    "descripcion": "Instalación de conversión de uranio en Isfahan. Procesa materia prima para enriquecimiento."
+  }
+]
