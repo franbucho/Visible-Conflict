@@ -8,19 +8,19 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
-  <div id="language-toggle">
-    <button onclick="setLanguage('es')">Español</button>
-    <button onclick="setLanguage('en')">English</button>
-  </div>
 
   <!-- Banner de noticias -->
   <div id="news-ticker-container">
     <div id="news-ticker"></div>
   </div>
 
-  <!-- Título del mapa -->
+  <!-- Título del mapa y botones de idioma -->
   <header id="banner">
     <h1 id="title">Mapa de Conflictos Mundiales</h1>
+    <div id="language-toggle">
+      <button onclick="setLanguage('es')">Español</button>
+      <button onclick="setLanguage('en')">English</button>
+    </div>
   </header>
 
   <!-- Mapa -->

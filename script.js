@@ -47,9 +47,9 @@ function setLanguage(lang) {
 }
 
 function initMap() {
-  map = L.map('map').setView([32.4279, 53.6880], 6);
+  map = L.map('map').setView([20, 0], 2); // Vista global 🌍
 
-  // CartoDB Positron tiles: nombres en inglés
+  // Tile layer en inglés
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://carto.com/">CartoDB</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     subdomains: 'abcd',

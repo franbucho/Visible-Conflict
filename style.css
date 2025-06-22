@@ -8,27 +8,6 @@ body {
   flex-direction: column;
 }
 
-#language-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 9999;
-}
-
-button {
-  margin: 5px;
-  padding: 8px 12px;
-  background-color: #444;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #666;
-}
-
 /* Ticker de noticias */
 #news-ticker-container {
   background-color: #222;
@@ -61,16 +40,43 @@ button:hover {
 /* Banner del título */
 #banner {
   background-color: #222;
-  padding: 12px 10px;
+  padding: 10px 20px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.8);
-  font-weight: bold;
-  font-size: 1.4em;
   color: #f0f0f0;
-  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
 }
 
-/* Mapa ocupa el resto */
+/* Título */
+#title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Botones de idioma dentro del banner */
+#language-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+#language-toggle button {
+  padding: 6px 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#language-toggle button:hover {
+  background-color: #666;
+}
+
+/* Mapa ocupa todo el resto */
 #map {
   flex-grow: 1;
   width: 100%;
