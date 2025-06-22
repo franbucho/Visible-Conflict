@@ -22,5 +22,101 @@
     "fecha": "2025-06-21",
     "tipo": "Instalación nuclear",
     "descripcion": "Bombardeada con bombarderos B-2 Spirit, con apoyo de 2 aviones KC-46 Pegasus que los repostaron para la vuelta inmediata a Estados Unidos."
+  },
+  {
+    "lat": 50.4501,
+    "lng": 30.5234,
+    "nombre": "Kiev",
+    "fecha": "2022-02-24",
+    "tipo": "Ataque con misiles",
+    "descripcion": "Ataques iniciales con misiles rusos al comienzo de la invasión a gran escala de Ucrania."
+  },
+  {
+    "lat": 48.8566,
+    "lng": 37.7608,
+    "nombre": "Avdiivka",
+    "fecha": "2023-10-01",
+    "tipo": "Combate terrestre",
+    "descripcion": "Feroz enfrentamiento entre fuerzas ucranianas y tropas rusas por el control de Avdiivka."
+  },
+  {
+    "lat": 33.3152,
+    "lng": 44.3661,
+    "nombre": "Bagdad",
+    "fecha": "2003-03-20",
+    "tipo": "Invasión militar",
+    "descripcion": "Inicio de la invasión de Irak liderada por EE.UU. bajo la Operación Libertad Iraquí."
+  },
+  {
+    "lat": 33.2232,
+    "lng": 43.6793,
+    "nombre": "Falluja",
+    "fecha": "2004-11-08",
+    "tipo": "Combate urbano",
+    "descripcion": "Segunda Batalla de Faluya, uno de los enfrentamientos urbanos más intensos desde Vietnam."
+  },
+  {
+    "lat": 34.5553,
+    "lng": 69.2075,
+    "nombre": "Kabul",
+    "fecha": "2021-08-15",
+    "tipo": "Toma de poder",
+    "descripcion": "El Talibán tomó Kabul, marcando el colapso del gobierno afgano respaldado por EE.UU."
+  },
+  {
+    "lat": 34.3719,
+    "lng": 62.2040,
+    "nombre": "Herat",
+    "fecha": "2010-06-15",
+    "tipo": "Ataque insurgente",
+    "descripcion": "Ataques coordinados de los talibanes contra fuerzas afganas e internacionales."
+  },
+  {
+    "lat": 31.7683,
+    "lng": 35.2137,
+    "nombre": "Jerusalén",
+    "fecha": "2021-05-10",
+    "tipo": "Escalada de conflicto",
+    "descripcion": "El lanzamiento de cohetes desde Gaza a Jerusalén marcó una nueva escalada bélica."
+  },
+  {
+    "lat": 31.5018,
+    "lng": 34.4668,
+    "nombre": "Gaza",
+    "fecha": "2023-10-08",
+    "tipo": "Bombardeo aéreo",
+    "descripcion": "Fuerzas aéreas israelíes bombardearon Gaza tras ataques coordinados de Hamas."
+  },
+  {
+    "lat": 35.9333,
+    "lng": 36.6333,
+    "nombre": "Idlib",
+    "fecha": "2020-02-27",
+    "tipo": "Bombardeo",
+    "descripcion": "Fuerzas sirias y rusas atacaron posiciones rebeldes, provocando decenas de muertos entre tropas turcas."
+  },
+  {
+    "lat": 36.2021,
+    "lng": 37.1343,
+    "nombre": "Alepo",
+    "fecha": "2016-12-13",
+    "tipo": "Batalla urbana",
+    "descripcion": "Caída de Alepo tras intensos combates entre el régimen sirio y grupos rebeldes."
+  },
+  {
+    "lat": 32.8872,
+    "lng": 13.1913,
+    "nombre": "Trípoli",
+    "fecha": "2011-08-21",
+    "tipo": "Toma de capital",
+    "descripcion": "Rebeldes libios tomaron Trípoli, marcando el fin del régimen de Muamar Gadafi."
+  },
+  {
+    "lat": 31.2001,
+    "lng": 16.5880,
+    "nombre": "Sirte",
+    "fecha": "2011-10-20",
+    "tipo": "Captura de líder",
+    "descripcion": "Muamar Gadafi fue capturado y asesinado en su ciudad natal por fuerzas rebeldes."
   }
 ]
