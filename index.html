@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapa de Conflictos Mundiales / World Conflict Map</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
 <body>
   <div id="language-toggle">
     <button onclick="setLanguage('es')">Español</button>
@@ -9,12 +18,16 @@
     <div id="news-ticker"></div>
   </div>
 
+  <!-- Título del mapa -->
   <header id="banner">
     <h1 id="title">Mapa de Conflictos Mundiales</h1>
   </header>
 
+  <!-- Mapa -->
   <div id="map"></div>
 
+  <!-- Scripts -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
+</html>

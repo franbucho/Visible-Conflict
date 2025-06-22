@@ -42,15 +42,11 @@ function updateNewsTicker() {
 function setLanguage(lang) {
   language = lang;
   document.getElementById('title').innerText = translations[lang].title;
-  loadMapData();
   updateNewsTicker();
+  loadMapData();
 }
 
 function initMap() {
-  if (map) {
-    map.remove();
-  }
-
   map = L.map('map').setView([32.4279, 53.6880], 6);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -62,7 +58,7 @@ function initMap() {
 }
 
 function loadMapData() {
-  if (!map) initMap();
+  if (!markersLayer) return;
   markersLayer.clearLayers();
 
   fetch('data.json')

@@ -3,6 +3,9 @@ body {
   font-family: sans-serif;
   background: #111;
   color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #language-toggle {
@@ -26,19 +29,6 @@ button:hover {
   background-color: #666;
 }
 
-/* Banner del título */
-#banner {
-  margin-top: 80px; /* deja espacio para el ticker */
-  background-color: #222;
-  padding: 20px 10px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
-  font-weight: bold;
-  font-size: 1.8em;
-  color: #f0f0f0;
-  user-select: none;
-}
-
 /* Ticker de noticias */
 #news-ticker-container {
   background-color: #222;
@@ -49,9 +39,6 @@ button:hover {
   font-size: 1em;
   padding: 10px 0;
   user-select: none;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
 }
@@ -71,8 +58,20 @@ button:hover {
   }
 }
 
-/* Mapa */
+/* Título */
+#banner {
+  background-color: #222;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #f0f0f0;
+  user-select: none;
+}
+
+/* Mapa ocupa todo el espacio restante */
 #map {
-  height: calc(90vh - 80px);
+  flex-grow: 1;
   width: 100%;
 }
